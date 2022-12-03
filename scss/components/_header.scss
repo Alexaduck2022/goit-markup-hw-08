@@ -1,0 +1,56 @@
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+
+	width: 100%;
+
+	border-bottom: 1px solid #ececec;
+	transition: background-color var(--anim), backdrop-filter var(--anim);
+}
+
+.header--no-transparency {
+	background-color: rgba(255, 255, 255, 0.7);
+	backdrop-filter: blur(3px);
+}
+
+.header__container {
+	display: flex;
+	align-items: center;
+}
+
+.header__logo {
+	margin-right: 93px;
+}
+.header__adress-nav {
+	display: flex;
+	align-items: center;
+	gap: 50px;
+}
+
+.header__mail,
+.header__tel {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: calc(16 / 14);
+	letter-spacing: 0.02em;
+	color: var(--description-txt-cl);
+	padding-top: 32px;
+	padding-bottom: 32px;
+	align-items: center;
+	transition: color var(--anim);
+
+	&:hover,
+	&:focus,
+	&:hover,
+	&:focus {
+		color: var(--accent-txt-cl);
+	}
+}
+.header__ikon {
+	fill: currentColor;
+}

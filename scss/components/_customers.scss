@@ -1,0 +1,28 @@
+.customers {
+	@extend %section;
+}
+.customers-list {
+	--items: 6;
+}
+
+.customers-list__item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--icon-cl);
+	border: 1px solid var(--icon-cl);
+	border-radius: 4px;
+	width: 170px;
+	height: 92px;
+	transition: color var(--anim), border var(--anim);
+
+	&:hover,
+	&:focus {
+		border: 1px solid var(--accent-txt-cl);
+		color: var(--accent-txt-cl);
+	}
+}
+
+.customers-list__ikon {
+	fill: currentColor;
+}

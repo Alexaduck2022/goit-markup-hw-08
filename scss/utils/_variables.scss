@@ -1,0 +1,29 @@
+:root {
+	/* Fonts */
+	--main-font: "Roboto", sans-serif;
+	--secondary-font: "Raleway", sans-serif;
+
+	/* Text colors */
+	--main-txt-cl: #212121;
+	--description-txt-cl: #757575;
+	--accent-txt-cl: #2196f3;
+	--light-txt-cl: #ffffff;
+	--footer-txt-cl: rgba(255, 255, 255, 0.6);
+	--light-logo-cl: #ffffff;
+	--dark-logo-cl: #000000;
+
+	/* BG colors */
+	--main-bg-cl: #ffffff;
+	--secondary-bg-cl: #f5f4fa;
+	--accent-bg-cl: #2196f3;
+	--hero-bg-cl: #c4c4c4;
+	--footer-bg-cl: #2f303a;
+	--frame-bg-cl: #eeeeee;
+
+	/* Others */
+	--icon-cl: #afb1b8;
+	--card-set-gap: 30px;
+	--items: 3;
+	--indent: 30px;
+	--anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
