@@ -1,9 +1,20 @@
 .card-set {
+	@media screen and (min-width: 768px) {
+	}
 	display: flex;
 	flex-wrap: wrap;
 	gap: var(--indent);
 }
 
 .card-set__item {
-	flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
+	@media screen and (max-width: 767px) {
+		margin-bottom: 30px;
+	}
+
+	@media screen and (min-width: 768px) {
+		flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
+	}
+	@media screen and (min-width: 1200px) {
+		flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
+	}
 }

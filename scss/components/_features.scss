@@ -1,11 +1,32 @@
 .features {
-	@include section(94px, 0);
+	@include section(60px, 60px);
+
+	@media screen and (min-width: 1200px) {
+		@include section(94px, 0);
+	}
 }
 .features-card {
-	display: flex;
-	gap: 30px;
+	@media screen and (min-width: 768px) {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+	}
 }
 
+.features-card__list {
+	@media screen and (min-width: 768px) {
+		flex-basis: 354px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		flex-basis: 270px;
+	}
+}
+.features-card__list:not(:last-child) {
+	@media screen and (max-width: 1199px) {
+		padding-bottom: 30px;
+	}
+}
 .features-card__bg {
 	display: flex;
 	justify-content: center;
@@ -24,6 +45,11 @@
 	line-height: 1.14;
 	text-transform: uppercase;
 	width: 270px;
+
+	@media screen and (max-width: 767px) {
+		width: 100%;
+		text-align: center;
+	}
 }
 
 .features-card__text {
@@ -31,4 +57,9 @@
 	line-height: 1.71;
 	color: var(--description-txt-cl);
 	width: 270px;
+
+	@media screen and (min-width: 480px) {
+		width: 100%;
+		text-align: left;
+	}
 }

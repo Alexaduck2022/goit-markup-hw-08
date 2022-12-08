@@ -2,19 +2,32 @@
 	@extend %section;
 }
 .customers-list {
-	--items: 6;
+	--items: 2;
+	@media screen and (min-width: 768px) {
+		--items: 3;
+	}
+	@media screen and (min-width: 1200px) {
+		--items: 6;
+	}
 }
 
 .customers-list__item {
+	width: 210px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: var(--icon-cl);
 	border: 1px solid var(--icon-cl);
 	border-radius: 4px;
-	width: 170px;
+
 	height: 92px;
 	transition: color var(--anim), border var(--anim);
+	@media screen and (min-width: 768px) {
+		width: 226px;
+	}
+	@media screen and (min-width: 1200px) {
+		width: 170px;
+	}
 
 	&:hover,
 	&:focus {

@@ -1,14 +1,8 @@
 .work {
+	@media screen and (max-width: 1199px) {
+		display: none;
+	}
 	@extend %section;
-}
-.work-title,
-.team-title,
-.customers-title {
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 42px;
-	text-align: center;
-	margin-bottom: 50px;
 }
 .work-list {
 	display: flex;

@@ -1,0 +1,129 @@
+.menu {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+	@media (max-width: 767px) {
+		display: none;
+	}
+}
+
+.menu .link {
+	padding: 10px;
+	color: inherit;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+	}
+}
+
+.menu-toggle {
+	min-height: 40px;
+	min-width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	padding: 0;
+	background-color: transparent;
+	cursor: pointer;
+	border: none;
+	border-radius: 50%;
+	outline: none;
+	transition: color var(--anim);
+
+	@media (min-width: 768px) {
+		display: none;
+	}
+	&:hover,
+	&:focus {
+		fill: var(--accent-txt-cl);
+	}
+}
+
+.menu-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	display: flex;
+	flex-direction: column;
+
+	width: 100vw;
+	height: 100vh;
+	padding: 48px 40px;
+	background: var(--main-bg-cl);
+	z-index: 999;
+
+	transform: translateX(100%);
+	transition: transform 250ms ease-in-out;
+
+	&.is-open {
+		transform: translateX(0);
+	}
+}
+.menu-container .menu-toggle {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	color: var(--main-txt-cl);
+}
+//---Menu---
+.mobile-menu {
+	margin-bottom: auto;
+}
+.mobile-menu .link {
+	display: block;
+	padding-bottom: 32px;
+	color: var(--main-txt-cl);
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 1.175;
+	letter-spacing: 0.02em;
+
+	text-decoration: none;
+}
+.mobile-menu__link.current-page {
+	color: var(--accent-txt-cl);
+}
+
+//---Contacts----
+.mobile-contacts {
+	padding-bottom: 64px;
+}
+.mobile-contacts .link {
+	display: block;
+}
+.mobile-contacts__tel {
+	padding-bottom: 32px;
+	font-weight: 500;
+	font-size: 34px;
+	line-height: 1.18;
+	letter-spacing: 0.02em;
+	color: (var(--accent-txt-cl));
+}
+.mobile-contacts__mail {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 1.17px;
+	letter-spacing: 0.02em;
+
+	color: var(--description-txt-cl);
+}
+
+//---Socials---
+.mobile-socials {
+	display: flex;
+	gap: 20px;
+}
+.mobile-socials .link {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1.22;
+	letter-spacing: 0.02em;
+
+	color: (var(--accent-txt-cl));
+}

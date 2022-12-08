@@ -6,14 +6,26 @@
 }
 
 .footer__container {
-	display: flex;
-	align-items: baseline;
+	@media screen and (min-width: 480px) {
+		display: block;
+	}
+	// display: flex;
+	// align-items: baseline;
 }
-
+.studia-container {
+	text-align: center;
+	margin-bottom: 60px;
+}
+.studia-socials-container {
+	@media screen and (min-width: 768px) {
+		display: flex;
+		justify-content: space-around;
+	}
+}
 .footer__logo {
 	display: inline-block;
 	margin-bottom: 20px;
-	margin-right: 156px;
+	// margin-right: 156px;
 }
 
 .logo--white {
@@ -38,6 +50,8 @@
 }
 .join-in,
 .sign-up {
+	text-align: center;
+
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14;
@@ -47,18 +61,26 @@
 }
 
 .signup-group {
-	display: flex;
+	text-align: center;
+	@media screen and (min-width: 1200px) {
+		display: flex;
+	}
 }
 
 .signup-btn-icon {
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	// min-width: 200px;
+	min-height: 50px;
 	gap: 10px;
 	height: 50px;
 	border-radius: 4px;
 
-	min-width: 200px;
 	background-color: var(--accent-txt-cl);
 	transition: box-shadow var(--anim);
 
@@ -69,6 +91,8 @@
 }
 
 .signup-form-field {
+	margin-bottom: 20px;
+
 	width: 358px;
 	height: 50px;
 	padding: 15px 16px;
@@ -85,6 +109,9 @@
 	&:hover,
 	&:focus {
 		border: 1px solid var(--accent-txt-cl);
+	}
+	@media screen and (min-width: 768px) {
+		width: 450px;
 	}
 }
 
@@ -105,10 +132,17 @@
 	fill: var(--light-txt-cl);
 }
 .footer-socials {
-	justify-content: flex-start;
+	@media screen and (min-width: 1200px) {
+		justify-content: flex-start;
+	}
+}
+.socials-container {
+	margin-bottom: 60px;
 }
 .socials-container .join-in {
-	margin-right: 183px;
+	@media screen and (min-width: 1200px) {
+		margin-right: 183px;
+	}
 }
 .socials-container .socials__link {
 	background-color: rgba(255, 255, 255, 0.1);
@@ -123,36 +157,4 @@
 
 .socials-container .socials__icon {
 	fill: currentColor;
-}
-
-.filter-item {
-	display: inline-block;
-	min-width: 73px;
-	padding: 5px 21px;
-	min-height: 38px;
-	font-family: inherit;
-	background-color: var(--secondary-bg-cl);
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.62;
-	text-align: center;
-	border-radius: 4px;
-	border: 1px solid transparent;
-	cursor: pointer;
-	transition: color var(--anim), background-color var(--anim), filter var(--anim);
-
-	&:hover,
-	&:focus {
-		color: var(--light-txt-cl);
-		background-color: var(--accent-txt-cl);
-		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-	}
-}
-
-.portfolio-nav {
-	display: flex;
-	justify-content: center;
-	gap: 8px;
-	margin-bottom: 50px;
-	margin-top: 80px;
 }
