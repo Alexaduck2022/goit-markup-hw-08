@@ -63,10 +63,6 @@
 	text-transform: uppercase;
 	color: var(--light-txt-cl);
 	margin-bottom: 20px;
-
-	@media screen and (min-width: 1200px) {
-		text-align: left;
-	}
 }
 
 .signup-group {

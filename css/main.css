@@ -798,12 +798,6 @@ img {
   color: var(--light-txt-cl);
   margin-bottom: 20px;
 }
-@media screen and (min-width: 1200px) {
-  .join-in,
-.sign-up {
-    text-align: left;
-  }
-}
 
 .signup-group {
   text-align: center;
