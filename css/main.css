@@ -730,10 +730,26 @@ img {
     display: block;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
 
 .studia-container {
   text-align: center;
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .studia-container {
+    min-width: 300px;
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -781,6 +797,12 @@ img {
   text-transform: uppercase;
   color: var(--light-txt-cl);
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .join-in,
+.sign-up {
+    text-align: left;
+  }
 }
 
 .signup-group {
@@ -845,6 +867,11 @@ img {
     width: 450px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .signup-form-field {
+    width: 358px;
+  }
+}
 
 .signup-form-btn {
   min-width: 110px;
@@ -873,6 +900,12 @@ img {
 
 .socials-container {
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .socials-container {
+    min-width: 300px;
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 1200px) {

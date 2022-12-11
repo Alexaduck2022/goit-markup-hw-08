@@ -9,12 +9,18 @@
 	@media screen and (min-width: 480px) {
 		display: block;
 	}
-	// display: flex;
-	// align-items: baseline;
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		align-items: baseline;
+	}
 }
 .studia-container {
 	text-align: center;
 	margin-bottom: 60px;
+	@media screen and (min-width: 1200px) {
+		min-width: 300px;
+		text-align: left;
+	}
 }
 .studia-socials-container {
 	@media screen and (min-width: 768px) {
@@ -25,7 +31,6 @@
 .footer__logo {
 	display: inline-block;
 	margin-bottom: 20px;
-	// margin-right: 156px;
 }
 
 .logo--white {
@@ -58,6 +63,10 @@
 	text-transform: uppercase;
 	color: var(--light-txt-cl);
 	margin-bottom: 20px;
+
+	@media screen and (min-width: 1200px) {
+		text-align: left;
+	}
 }
 
 .signup-group {
@@ -69,13 +78,14 @@
 
 .signup-btn-icon {
 	width: 200px;
+	// min-width: 200px;
 	margin-left: auto;
 	margin-right: auto;
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	// min-width: 200px;
+
 	min-height: 50px;
 	gap: 10px;
 	height: 50px;
@@ -113,6 +123,9 @@
 	@media screen and (min-width: 768px) {
 		width: 450px;
 	}
+	@media screen and (min-width: 1200px) {
+		width: 358px;
+	}
 }
 
 .signup-form-btn {
@@ -138,6 +151,10 @@
 }
 .socials-container {
 	margin-bottom: 60px;
+	@media screen and (min-width: 1200px) {
+		min-width: 300px;
+		text-align: left;
+	}
 }
 .socials-container .join-in {
 	@media screen and (min-width: 1200px) {
