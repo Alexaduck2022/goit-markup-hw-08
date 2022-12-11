@@ -7,18 +7,20 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	text-align: center;
-	padding-bottom: 200px;
-	padding-top: 200px;
+	padding: 118px 60px 118px 60px;
 
 	@media screen and (min-width: 1200px) {
 		margin: 80px auto 0 auto;
+		padding-bottom: 200px;
+		padding-top: 200px;
 	}
 }
 .hero__title {
-	width: 696px;
+	min-width: 360px;
 	font-weight: 900;
-	font-size: 44px;
-	line-height: 1.36;
+	font-size: 26px;
+	line-height: 1.62;
+
 	text-align: center;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
@@ -26,4 +28,11 @@
 	margin-bottom: 30px;
 	margin-left: auto;
 	margin-right: auto;
+
+	@media screen and (min-width: 1200px) {
+		width: 696px;
+		font-weight: 900;
+		font-size: 44px;
+		line-height: 1.36;
+	}
 }

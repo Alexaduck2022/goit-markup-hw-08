@@ -373,20 +373,21 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
-  padding-bottom: 200px;
-  padding-top: 200px;
+  padding: 118px 60px 118px 60px;
 }
 @media screen and (min-width: 1200px) {
   .hero {
     margin: 80px auto 0 auto;
+    padding-bottom: 200px;
+    padding-top: 200px;
   }
 }
 
 .hero__title {
-  width: 696px;
+  min-width: 360px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -394,6 +395,14 @@ img {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -759,6 +768,9 @@ img {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -797,6 +809,12 @@ img {
   text-transform: uppercase;
   color: var(--light-txt-cl);
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .join-in,
+.sign-up {
+    text-align: left;
+  }
 }
 
 .signup-group {
@@ -941,6 +959,8 @@ img {
 
 .filter-item {
   display: inline-block;
+  max-width: 100%;
+  height: auto;
   min-width: 73px;
   padding: 5px 22px;
   min-height: 38px;
