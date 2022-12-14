@@ -23,6 +23,11 @@
 
 	transform: translateX(-50%) translateY(-50%);
 
+	@media screen and (max-width: 1199px) {
+		width: 450px;
+		height: 609px;
+	}
+
 	width: 528px;
 	min-height: 581px;
 	padding: 40px;
@@ -172,6 +177,10 @@
 	font-size: 14px;
 	line-height: calc(24 / 12);
 	color: var(--description-txt-cl);
+
+	@media screen and (max-width: 1199px) {
+		font-size: 12px;
+	}
 }
 .modal-form-agreememt-link {
 	color: var(--accent-txt-cl);

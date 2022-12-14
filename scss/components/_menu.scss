@@ -127,3 +127,20 @@
 
 	color: (var(--accent-txt-cl));
 }
+.media-list {
+	display: flex;
+	align-items: center;
+}
+
+.media-list::before {
+	content: "";
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 22px;
+	border: 0.5px solid #dedada;
+	-webkit-transform: rotate(90deg) translateX(-10px);
+	transform: rotate(90deg) translateX(-10px);
+	-webkit-transform-origin: top left;
+	transform-origin: top left;
+}
