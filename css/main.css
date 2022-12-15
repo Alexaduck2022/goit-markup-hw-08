@@ -364,10 +364,12 @@ img {
   background-color: var(--hero-bg-cl);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding-bottom: 118px;
+  padding-top: 118px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/hero/img_s@1x.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../image/hero/img_s@1x.jpg);
-  text-align: center;
-  padding: 118px 60px 118px 60px;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
@@ -408,7 +410,6 @@ img {
 }
 
 .hero__title {
-  min-width: 360px;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
@@ -420,6 +421,11 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (max-width: 1199px) {
+  .hero__title {
+    max-width: 360px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero__title {
     width: 696px;
@@ -429,7 +435,7 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .work-title,
 .team-title,
 .customers-title {
@@ -503,7 +509,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 270px;
   min-height: 120px;
   margin-bottom: 30px;
   background: var(--secondary-bg-cl);
@@ -516,7 +521,6 @@ img {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  width: 270px;
 }
 @media screen and (max-width: 767px) {
   .features-card__item {
@@ -529,7 +533,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
   color: var(--description-txt-cl);
-  width: 270px;
+  max-width: 270px;
 }
 @media screen and (min-width: 480px) {
   .features-card__text {
@@ -598,7 +602,6 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 450px;
-  height: 460px;
 }
 @media screen and (min-width: 768px) {
   .team-card__img {
@@ -614,6 +617,7 @@ img {
 }
 
 .team-card__cell {
+  width: 100%;
   background-color: var(--main-bg-cl);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -752,6 +756,11 @@ img {
   fill: currentColor;
 }
 
+.customers-list > .card-set__item {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .footer {
   padding-bottom: 60px;
   padding-top: 60px;
@@ -886,7 +895,7 @@ img {
 
 .signup-form-field {
   margin-bottom: 20px;
-  width: 358px;
+  width: 100%;
   height: 50px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);

@@ -4,7 +4,10 @@
 
 	background-repeat: no-repeat;
 	background-position: center;
-	// background-size: cover;
+	background-size: cover;
+	text-align: center;
+	padding-bottom: 118px;
+	padding-top: 118px;
 
 	// Mobile screen
 	background-image: linear-gradient(rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
@@ -37,9 +40,6 @@
 		}
 	}
 
-	text-align: center;
-	padding: 118px 60px 118px 60px;
-
 	@media screen and (min-width: 1200px) {
 		margin: 80px auto 0 auto;
 		padding-bottom: 200px;
@@ -47,7 +47,6 @@
 	}
 }
 .hero__title {
-	min-width: 360px;
 	font-weight: 900;
 	font-size: 26px;
 	line-height: 1.62;
@@ -59,6 +58,10 @@
 	margin-bottom: 30px;
 	margin-left: auto;
 	margin-right: auto;
+
+	@media screen and (max-width: 1199px) {
+		max-width: 360px;
+	}
 
 	@media screen and (min-width: 1200px) {
 		width: 696px;
